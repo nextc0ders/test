@@ -8,6 +8,59 @@
 	<link rel="stylesheet" href="/fonts/DMSerifDisplay-Italic.ttf">
 	<link rel="stylesheet" href="/fonts/DMSerifDisplay-Regular.ttf">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<style>
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--heading-color: rgb(14, 42, 54);
+	--primary-color: #A98BE4;
+	--light-color: rgb(206, 187, 243);
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+body {
+	font-family: "DM Serif Display", sans-serif;
+}
+
+.has-background {
+	height: 100vh;
+	background: linear-gradient(
+		45deg,
+		rgb(255, 255, 255) 0%,
+		rgb(255, 255, 255) 50%,
+		rgb(243, 200, 222) 100%
+		);
+}
+.container {
+	
+}
+.top-img {
+	position: absolute;
+	bottom: 0;
+	line-height: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.bottom-img {
+	transform: rotate(180deg);
+	line-height: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.discover .container {
+	background: var(--light-color);
+	height: 600px;
+}
+	</style>
 </head>
 <body>
 
